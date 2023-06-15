@@ -1,0 +1,37 @@
+/*
+Theme Name: Blank Theme V2
+Author: ROC Horizon College
+Description: Dit thema laat op de homepage een overzicht van posts zien met een bovenaan een lijst van links naar de beschikbare pagina's
+Version: 2.0
+*/
+header{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+nav:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, #82ccdd, #13b2d6);
+    color: white;
+    width: 70%;
+    padding: 1%;
+    margin: 0 auto;
+}
+nav.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+}
+nav a, h1 {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover, h1:hover {
+    color: #fc7fb4;
+}

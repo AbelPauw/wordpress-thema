@@ -4,17 +4,23 @@ Author: ROC Horizon College
 Description: Dit thema laat op de homepage een overzicht van posts zien met een bovenaan een lijst van links naar de beschikbare pagina's
 Version: 2.0
 */
+body{
+    width: 65%;
+    margin: 0 auto;
+    background-color: #defcff;
+    font-family: monospace;
+}
 header{
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
 }
 nav:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(45deg, #82ccdd, #13b2d6);
+    background: linear-gradient(90deg, #82ccdd, #13b2d6);
+    border-bottom: 15px solid #000000;
     color: white;
-    width: 70%;
     padding: 1%;
     margin: 0 auto;
 }
@@ -34,4 +40,40 @@ nav a, h1 {
 }
 nav a:hover, h1:hover {
     color: #fc7fb4;
+}
+
+main p{
+    background-color: #ffffff;
+    padding: 1%;
+    width: auto;
+    height: fit-content;
+    border-bottom: 2px solid #000000;
+}
+.entry-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    grid-gap: 4%;
+    grid-auto-rows: minmax(100px, 200px);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(210deg, #82ccdd, #13b2d6);
+    border-top: 15px solid #000000;
+    color: white;
+    padding: 1%;
+    margin: 0 auto;
+    padding-left: 2%;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    padding: 0%;
+}
+footer li{
+    list-style-type: none;
 }

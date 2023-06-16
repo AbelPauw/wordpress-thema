@@ -48,6 +48,16 @@
 
     <footer>
             <!-- Voeg hier je footerinhoud toe -->
+            <div class="navigation">
+            <h5>navigation:</h5>
+            <?php
+                 wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'site-navigation'));
+            ?>
+            </div>
+            <div class="coppyright">
+            <h5>coppyright:</h5>
+            <p>© 2023 - Abel Pauw</p>
+            </div>
     </footer>
 </body>
 </html>

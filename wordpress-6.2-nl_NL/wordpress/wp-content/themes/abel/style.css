@@ -4,68 +4,115 @@ Author: ROC Horizon College
 Description: Dit thema laat op de homepage een overzicht van posts zien met een bovenaan een lijst van links naar de beschikbare pagina's
 Version: 2.0
 */
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
     width: 65%;
     margin: 0 auto;
-    background-color: #defcff;
-    font-family: monospace;
+    background-color: #ffffff;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    opacity: 0.85;
 }
 header{
-    margin-top: 2%;
     margin-bottom: 1%;
 }
 nav:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, #82ccdd, #13b2d6);
-    border-bottom: 15px solid #000000;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1%;
     margin: 0 auto;
 }
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+  
 nav.menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     width: 100%;
 }
 nav ul{
     display: flex;
-    width: 85%;
+    width: 20%;
     justify-content: space-around;
 }
+header li{
+    margin-right: 7%;
+    list-style-type: none;
+    font-size: 125%;
+}
 nav a, h1 {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    width: 20%;
 }
 nav a:hover, h1:hover {
-    color: #fc7fb4;
+    color: #b980ff;
 }
-
+.attention {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8%;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+}
+.attention h2{
+    font-size: 300%;
+}
+.attention a {
+    background-color: #b980ff;
+    padding: 1%;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.attention a:hover {
+    background-color: #a65dff;
+}
 main p{
     background-color: #ffffff;
     padding: 1%;
-    width: auto;
-    height: fit-content;
-    border-bottom: 2px solid #000000;
+    min-width: 300px;
+    height: auto;
+    border-bottom: 3px solid #000000;
+    width: 48%;
+    margin: 1%;
+}
+main h2{
+    width: 100%;
+    text-align: center;
 }
 .entry-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
-    grid-gap: 4%;
-    grid-auto-rows: minmax(100px, 200px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: linear-gradient(210deg, #82ccdd, #13b2d6);
-    border-top: 15px solid #000000;
-    color: white;
+    border-top: 3px solid #000000;
+    color: rgb(0, 0, 0);
     padding: 1%;
-    margin: 0 auto;
+    margin: 0;
     padding-left: 2%;
+
 }
 footer ul{
     display: flex;

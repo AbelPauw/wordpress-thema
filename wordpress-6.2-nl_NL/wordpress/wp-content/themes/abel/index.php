@@ -20,7 +20,7 @@
 
         <nav>
             <div class="title">
-                <figure class="wp-block-image size-full is-resized"><img src="http://localhost/wordpress-theme/wordpress-6.2-nl_NL/wordpress/wp-content/uploads/2023/06/transp-thyla.png" alt="" class="wp-image-18" width="126" height="106" /></figure>
+                <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="logo">
                 <h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <?php
                 wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'site-navigation'));

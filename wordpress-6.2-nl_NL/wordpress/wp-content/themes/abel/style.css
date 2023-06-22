@@ -30,6 +30,9 @@ nav:first-child {
     padding: 1%;
     margin: 0 auto;
 }
+nav #logo {
+    width: 10%;
+}
 .title {
     display: flex;
     flex-direction: row;

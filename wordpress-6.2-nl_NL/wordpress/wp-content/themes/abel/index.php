@@ -29,7 +29,7 @@
         </nav>
         <div class="attention">
             <h2>Lees onze meest recente posts</h2>
-            <a href="..">lees meer</a>
+            <a href="../wordpress">lees meer</a>
         </div>
     </header>
 

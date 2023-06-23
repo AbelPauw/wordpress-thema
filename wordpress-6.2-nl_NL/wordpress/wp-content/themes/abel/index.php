@@ -29,7 +29,7 @@
         </nav>
         <div class="attention">
             <h2>Lees onze meest recente posts</h2>
-            <a href="../wordpress/2023/06/16/de-voordelen-van-regelmatige-lichaamsbeweging/">lees meer</a>
+            <a href="..">lees meer</a>
         </div>
     </header>
 
